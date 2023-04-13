@@ -1,11 +1,10 @@
-import * as rls from "readline-sync";
+function esMultiplos(num1: number, num2: number) {
+    if (num1 % num2===0) {
+      return ("es multiplo");
+    } else {
+      return "no es multiplo";
+    }
+  }
+  console.log(esMultiplos(6,8)); 
 
-let numero: number = rls.questionInt("ingrese un numero: ");
-let numero2: number = rls.questionInt("ingrese numero final: ");
 
-for(let i =  numero ; i<numero2 ; i++){
-  
-     let mult: number =  numero * i;
-     
-        console.log( `${numero} x ${i} = ${mult} `); 
-}
